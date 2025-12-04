@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    
+    <div class="left">
+        <div class="icon">
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+
+        <h1>Manage Your Money</h1>
+
+        <p class="paragraph">
+            Track expenses, visualize spending patterns, and<br>
+            take control of your finances with our intuitive<br>
+            personal finance tracker.
+        </p>
+
+        <ul class="features">
+            <li>Real-time expense tracking</li>
+            <li>Smart analytics & insights</li>
+            <li>Export & backup your data</li>
+        </ul>
+    </div>
+
+    
+    <!-- RIGHT SECTION -->
+<div class="right">
+
+    <div class="tabs">
+        <button id="signInTab" class="active">Sign In</button>
+        <button id="createTab">Create Account</button>
+    </div>
+
+    <!-- SIGN IN FORM -->
+    <div id="signInForm" class="form">
+        <label>Email</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com">
+
+        <label>Password</label>
+        <input id="loginPassword" type="password" placeholder="••••••••">
+
+        <button id="loginBtn" class="signin-btn">Sign In</button>
+
+        <div class="divider">Or continue with</div>
+        <button class="google-btn">
+            <i class="fa-brands fa-google"></i> Google
+        </button>
+    </div>
+
+    <!-- CREATE ACCOUNT FORM -->
+    <div id="createForm" class="form" style="display:none;">
+        <label>Email</label>
+        <input id="regEmail" type="email" placeholder="you@example.com">
+
+        <label>Password</label>
+        <input id="regPassword" type="password" placeholder="••••••••">
+
+        <button id="createBtn" class="signin-btn">Create Account</button>
+    </div>
+
+</div>
+
+
+</body>
+</html>
